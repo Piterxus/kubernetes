@@ -1,0 +1,50 @@
+# Archivos de configuración locales
+*.env
+*.local
+*.override
+
+# Archivos de configuración de Kubernetes sensibles
+secrets.yaml
+secret*.yaml
+*.secret.yaml
+*.enc.yaml
+
+# Archivos de salida de herramientas como kustomize o Helm
+*.out.yaml
+*.rendered.yaml
+*.templated.yaml
+
+# Carpetas temporales
+/tmp
+temp/
+*.tmp
+
+# Archivos de log
+*.log
+
+# Archivos generados por Helm
+charts/
+*.tgz
+Chart.lock
+
+# Archivos generados por kustomize (si los generas manualmente)
+kustomization.build.yaml
+
+# Archivos de kubectl cache
+.kube/cache/
+.kube/http-cache/
+.kube/config.lock
+
+# Terraform o herramientas de IaC relacionadas
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Archivos de backup o swap de editores
+*~
+*.swp
+*.bak
+
+# Archivos de configuración personales
+.kube/config
+.kube/*.conf
